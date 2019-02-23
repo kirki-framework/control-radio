@@ -41,13 +41,13 @@ class Radio_Image extends Base {
 		parent::enqueue();
 
 		$url = apply_filters(
-			'kirki_package_url_control_radio_image',
-			trailingslashit( Kirki::$url ) . 'packages/kirki-framework/control-radio_image/src'
+			'kirki_package_url_control_radio',
+			trailingslashit( Kirki::$url ) . 'packages/kirki-framework/control-radio/src'
 		);
 
 		// Enqueue the script.
 		wp_enqueue_script(
-			'kirki-control-radio_image',
+			'kirki-control-radio',
 			"$url/assets/scripts/control.js",
 			[
 				'kirki-script',
@@ -60,7 +60,7 @@ class Radio_Image extends Base {
 
 		// Enqueue the style.
 		wp_enqueue_style(
-			'kirki-control-radio_image-style',
+			'kirki-control-radio-style',
 			"$url/assets/styles/style.css",
 			[],
 			KIRKI_VERSION
