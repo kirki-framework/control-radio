@@ -17,7 +17,7 @@ kirki.input.radio = {
             kirki.setting.set( control.id, jQuery( this ).val() );
         } );
     }
-}
+};
 
 wp.customize.controlConstructor['kirki-radio-buttonset'] = wp.customize.kirkiDynamicControl.extend( {} );
 wp.customize.controlConstructor['kirki-radio-image'] = wp.customize.kirkiDynamicControl.extend( {} );
