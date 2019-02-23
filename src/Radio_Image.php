@@ -42,7 +42,7 @@ class Radio_Image extends Base {
 
 		$url = apply_filters(
 			'kirki_package_url_control_radio',
-			trailingslashit( Kirki::$url ) . 'packages/kirki-framework/control-radio/src'
+			trailingslashit( Kirki::$url ) . 'vendor/kirki-framework/control-radio/src'
 		);
 
 		// Enqueue the script.
